@@ -56,6 +56,7 @@ public class SauceDemoLoginSteps {
 	@Then("Error message should display {string}")
 	public void error_message_should_display(String errorMessage) {
 		Assert.assertEquals(page.errorMessage.getText(), errorMessage);
+		
 	}
 
 	// Invalid test #Ends

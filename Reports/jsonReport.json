@@ -3,32 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 597986400,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the SauceDemo login page",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-05T15:47:38.722Z",
+        "start_timestamp": "2022-02-07T14:14:06.212Z",
         "before": [
           {
             "result": {
-              "duration": 2702952300,
+              "duration": 4450704800,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "Invalid login test",
+        "line": 5,
+        "name": "I should be able to select a date from date picker",
         "description": "",
-        "id": "sauce-demo-login;invalid-login-test",
+        "id": "demo-qa-scenarios;i-should-be-able-to-select-a-date-from-date-picker",
         "after": [
           {
             "result": {
-              "duration": 409596400,
+              "duration": 497660300,
               "status": "passed"
             },
             "match": {
@@ -56,81 +35,65 @@
         "steps": [
           {
             "result": {
-              "duration": 460655300,
+              "duration": 2782423000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "I enter invalid username \"standard_user\" password \"secret_invalid\"",
+            "line": 6,
+            "name": "I am on the date picker page \"https://demoqa.com/date-picker\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"standard_user\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"secret_invalid\"",
-                  "offset": 50
+                  "val": "\"https://demoqa.com/date-picker\"",
+                  "offset": 29
                 }
               ],
-              "location": "step_definitions.SauceDemoLoginSteps.i_enter_invalid_username_password(java.lang.String,java.lang.String)"
+              "location": "step_definitions.DemoQADatePickerSteps.i_am_on_the_date_picker_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2079832000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter \"02/01/2006\" to date picker",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"02/01/2006\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.DemoQADatePickerSteps.i_enter_to_date_picker(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 198667000,
+              "duration": 28804400,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I click on the login button",
+            "line": 8,
+            "name": "Date entered should be selected",
             "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 83122600,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I should not be logged in",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_should_not_be_logged_in()"
+              "location": "step_definitions.DemoQADatePickerSteps.date_entered_should_be_selected()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 51652000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Error message should display \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.error_message_should_display(java.lang.String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@SauceInvalidLogin"
+            "name": "@DemoQADatePicker"
           }
         ]
       }
     ],
-    "name": "Sauce Demo Login",
-    "description": "         This feature focuces on positive and nagative \n         log in tests",
-    "id": "sauce-demo-login",
+    "name": "Demo QA Scenarios",
+    "description": "         I want to practice different scenarios on Demo QA",
+    "id": "demo-qa-scenarios",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/SauceDemoLogin.feature",
+    "uri": "file:src/test/resources/features/DemoQADatePicker.feature",
     "tags": []
   }
 ]
