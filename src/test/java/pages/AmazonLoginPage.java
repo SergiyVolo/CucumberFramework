@@ -25,4 +25,6 @@ public class AmazonLoginPage {
 
 	@FindBy (className = "inventory_item_name")
 	public WebElement inventory;
+	
+	
 }
