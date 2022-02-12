@@ -1,13 +1,34 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-11T01:26:34.257Z",
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 718174200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-11T15:48:43.597Z",
         "before": [
           {
             "result": {
-              "duration": 3593605300,
+              "duration": 2517918800,
               "status": "passed"
             },
             "match": {
@@ -15,16 +36,15 @@
             }
           }
         ],
-        "line": 17,
-        "name": "I am able to handle Alert",
+        "line": 9,
+        "name": "Valid login test",
         "description": "",
-        "id": "demoqa-is-a-good-website;i-am-able-to-handle-alert",
+        "id": "sauce-demo-login;valid-login-test",
         "after": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You clicked a button}\n  (Session info: chrome\u003d98.0.4758.82): You clicked a button\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-V67KR6L\u0027, ip: \u0027192.168.1.75\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\\Users\\volos\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 857a50c200c042d6832b62b84915edc0\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat step_definitions.Hook.tearDown(Hook.java:29)\r\n",
-              "duration": 106067200,
-              "status": "failed"
+              "duration": 322834500,
+              "status": "passed"
             },
             "match": {
               "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
@@ -36,83 +56,84 @@
         "steps": [
           {
             "result": {
-              "duration": 3563650500,
+              "duration": 579115400,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I am on the Alerts page \"https://demoqa.com/alerts\"",
+            "line": 10,
+            "name": "I enter valid username \"standard_user\" password \"secret_sauce\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"https://demoqa.com/alerts\"",
-                  "offset": 24
+                  "val": "\"standard_user\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 48
                 }
               ],
-              "location": "step_definitions.DemoQASteps.i_am_on_the_alerts_page(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 130888900,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I click on AlertButton element",
-            "match": {
-              "location": "step_definitions.DemoQASteps.i_click_on_alert_button_element()"
+              "location": "step_definitions.SauceDemoLoginSteps.i_enter_valid_username_password(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.Alert.accept()\" because \"this.alert\" is null\r\n\tat utilities.BrowserUtils.alertAccept(BrowserUtils.java:41)\r\n\tat step_definitions.DemoQASteps.i_am_able_to_accept_the_alert(DemoQASteps.java:61)\r\n\tat ✽.I am able to accept the Alert(file:///C:/Users/volos/eclipse-workspace/CucumberFramework/./src/test/resources/features/DemoQA.feature:20)\r\n",
-              "duration": 6020100,
-              "status": "failed"
+              "duration": 358594500,
+              "status": "passed"
             },
-            "line": 20,
-            "name": "I am able to accept the Alert",
+            "line": 11,
+            "name": "I click on the login button",
             "match": {
-              "location": "step_definitions.DemoQASteps.i_am_able_to_accept_the_alert()"
+              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 921808900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be directed to inventory page",
+            "match": {
+              "location": "step_definitions.SauceDemoLoginSteps.i_should_be_directed_to_inventory_page()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59602300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "There should be 6 items in the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions.SauceDemoLoginSteps.there_should_be_items_in_the_page(java.lang.Integer)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SauceValidLogin"
           },
           {
-            "name": "@DemoQATests"
-          },
-          {
-            "name": "@DemoAlert1"
+            "name": "@SmokeTests"
           }
         ]
       }
     ],
-    "name": "DemoQA is a good website",
-    "description": "  Allows us to practice our skills with test automation",
-    "id": "demoqa-is-a-good-website",
+    "name": "Sauce Demo Login",
+    "description": "         This feature focuces on positive and nagative \n         log in tests",
+    "id": "sauce-demo-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DemoQA.feature",
-    "tags": [
-      {
-        "name": "@Regression",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@DemoQATests",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 13
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/SauceDemoLogin.feature",
+    "tags": []
   }
 ]
