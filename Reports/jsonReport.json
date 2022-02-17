@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-13T01:19:58.616Z",
+        "start_timestamp": "2022-02-17T01:14:25.210Z",
         "before": [
           {
             "result": {
-              "duration": 3241091700,
+              "duration": 2864894900,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "User should be directed to log in page",
+        "line": 6,
+        "name": "As a user, I want to add a trade",
         "description": "",
-        "id": "amazon-login;user-should-be-directed-to-log-in-page",
+        "id": "as-a-user--i-am-able-to-perform-trade-app-functions;as-a-user--i-want-to-add-a-trade",
         "after": [
           {
             "result": {
-              "duration": 109264500,
+              "duration": 182653600,
               "status": "passed"
             },
             "match": {
@@ -35,193 +35,182 @@
         "steps": [
           {
             "result": {
-              "duration": 5135510700,
+              "duration": 2879387500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the Trade App log in page",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.i_am_on_the_trade_app_log_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 267119800,
               "status": "passed"
             },
             "line": 8,
-            "name": "I am on amazon home page",
+            "name": "I enter username \"Sergiy\" password \"SuperSergiy123!\"",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_am_on_amazon_home_page()"
+              "arguments": [
+                {
+                  "val": "\"Sergiy\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"SuperSergiy123!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.TradeAppTrades.i_enter_username_password(java.lang.String,java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1030086400,
+              "duration": 860479900,
               "status": "passed"
             },
             "line": 9,
-            "name": "The sign in button displays",
+            "name": "I click on Trade login button",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.the_sign_in_button_displays()"
+              "location": "step_definitions.TradeAppTrades.i_click_on_trade_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2366118900,
+              "duration": 146410000,
               "status": "passed"
             },
             "line": 10,
-            "name": "I click on the sign in button",
+            "name": "I should be on Trade homepage",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_click_on_the_sign_in_button()"
+              "location": "step_definitions.TradeAppTrades.i_should_be_on_trade_homepage()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 179793100,
+              "duration": 351862500,
               "status": "passed"
             },
             "line": 11,
-            "name": "I should be directed to log in page",
+            "name": "I click on Add Trade button",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_should_be_directed_to_log_in_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tag"
-          },
-          {
-            "name": "@amazonLogin"
-          },
-          {
-            "name": "@SmokeTest"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-13T01:20:10.823Z",
-        "before": [
-          {
-            "result": {
-              "duration": 887344300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.setup()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "User should not be directed to password field when invalid email is given",
-        "description": "",
-        "id": "amazon-login;user-should-not-be-directed-to-password-field-when-invalid-email-is-given",
-        "after": [
-          {
-            "result": {
-              "duration": 153367900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5894377000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I am on the login page",
-            "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_am_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 161849300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I enter invalid email \"jon.dow@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jon.dow@gmail.com\"",
-                  "offset": 22
-                }
-              ],
-              "location": "step_definitions.AmazonLoginSteps.i_enter_invalid_email(java.lang.String)"
+              "location": "step_definitions.TradeAppTrades.i_click_on_add_trade_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 672502600,
+              "duration": 111248700,
               "status": "passed"
             },
-            "line": 17,
-            "name": "I click the continue button",
+            "line": 12,
+            "name": "I should be on Save Trade page",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_click_the_continue_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 106804400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should get error message says \"We cannot find an account with that email address\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"We cannot find an account with that email address\"",
-                  "offset": 32
-                }
-              ],
-              "location": "step_definitions.AmazonLoginSteps.i_should_get_error_message_says(java.lang.String)"
+              "location": "step_definitions.TradeAppTrades.i_should_be_on_save_trade_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 39732700,
+              "duration": 953729100,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I should still in the log in page",
+            "line": 13,
+            "name": "I select \"Buy to Open\" and I enter symbol \"UAONE\" entryDate \"01/01/2021\" entryPrice \"12.0\" exitDate \"01/01/2022\" exitPrice \"14.0\"",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_should_still_in_the_log_in_page()"
+              "arguments": [
+                {
+                  "val": "\"Buy to Open\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"UAONE\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"01/01/2021\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"12.0\"",
+                  "offset": 84
+                },
+                {
+                  "val": "\"01/01/2022\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"14.0\"",
+                  "offset": 123
+                }
+              ],
+              "location": "step_definitions.TradeAppTrades.i_select_and_i_enter_symbol_entry_date_entry_price_exit_date_exit_price(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 445931000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click Save button",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.i_click_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4608359300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The trade is displayed on the trade table",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.the_trade_is_displayed_on_the_trade_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1748124100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The data is deleted on the Database",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.the_data_is_deleted_on_the_database()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@tag"
+            "name": "@Regression"
           },
           {
-            "name": "@amazonLogin"
+            "name": "@AddTrade"
           },
           {
-            "name": "@amazonInvalidUser"
-          },
-          {
-            "name": "@SmokeTest"
+            "name": "@SmokeTests"
           }
         ]
       }
     ],
-    "name": "Amazon Login",
-    "description": "  I want to be able to login with valid credentials.\n  I should not be logged in with invalid credentials.",
-    "id": "amazon-login",
+    "name": "As a user, I am able to perform Trade app functions",
+    "description": "  I want to add, delete and update trades",
+    "id": "as-a-user--i-am-able-to-perform-trade-app-functions",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AmazonLogin.feature",
+    "uri": "file:src/test/resources/features/TradeAppTrades.feature",
     "tags": [
       {
-        "name": "@tag",
+        "name": "@Regression",
         "type": "Tag",
         "location": {
           "line": 1,
