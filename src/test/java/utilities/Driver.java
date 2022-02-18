@@ -9,13 +9,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.managers.InternetExplorerDriverManager;
 
 public class Driver {
-
+	
 	/* Driver class is reusable class for webDriver and it checks the webDriver on the system.
 	 * If there isn't any driver on the system, it downloads the driver and sets up the path and environment  
 	 * For this purpose, I've used WebDriver manager
@@ -60,6 +59,7 @@ public class Driver {
 				opts.addArguments("--headless");
 				opts.addArguments("--disable-gpu");
 				opts.addArguments("--no-sandbox");
+				opts.addArguments("--window-size=1920,1080");
 				driver = new ChromeDriver(opts);
 			}
 		}
