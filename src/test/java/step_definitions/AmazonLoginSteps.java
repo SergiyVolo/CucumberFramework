@@ -31,7 +31,7 @@ public class AmazonLoginSteps {
 	@Then("I should be directed to log in page")
 	public void i_should_be_directed_to_log_in_page() {
 		Assert.assertTrue(amazonlp.emailBox.isDisplayed());
-		Driver.getDriver().close();
+	//	Driver.getDriver().close();
 	}
 	
 	// invalid user test #STARTs

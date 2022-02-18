@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-18T15:58:33.778Z",
+        "start_timestamp": "2022-02-18T16:33:45.800Z",
         "before": [
           {
             "result": {
-              "duration": 2971527600,
+              "duration": 2631550500,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 50,
-        "name": "As a user, I am able to insert a trade to Database",
+        "line": 7,
+        "name": "User should be directed to log in page",
         "description": "",
-        "id": "as-a-user--i-am-able-to-perform-trade-app-functions;as-a-user--i-am-able-to-insert-a-trade-to-database",
+        "id": "amazon-login;user-should-be-directed-to-log-in-page",
         "after": [
           {
             "result": {
-              "duration": 4966100,
+              "duration": 304480900,
               "status": "passed"
             },
             "match": {
@@ -35,142 +35,51 @@
         "steps": [
           {
             "result": {
-              "duration": 1256983000,
+              "duration": 5134079700,
               "status": "passed"
             },
-            "line": 51,
-            "name": "I executed Insert query with the following data to Database",
+            "line": 8,
+            "name": "I am on amazon home page",
             "match": {
-              "location": "step_definitions.TradeAppTrades.i_executed_insert_query_with_the_following_data_to_database(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "\u0027891\u0027",
-                  "\u00271\u0027",
-                  "\u00270\u0027",
-                  "\u0027ONE\u0027",
-                  "\u00272021-10-10\u0027",
-                  "\u002750.0\u0027",
-                  "\u00272022-02-11\u0027",
-                  "\u002733.0\u0027",
-                  "\u00270\u0027"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 473819100,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I am on the Trade App log in page",
-            "match": {
-              "location": "step_definitions.TradeAppTrades.i_am_on_the_trade_app_log_in_page()"
+              "location": "step_definitions.AmazonLoginSteps.i_am_on_amazon_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 203632100,
+              "duration": 1342984500,
               "status": "passed"
             },
-            "line": 54,
-            "name": "I enter username \"Sergiy\" password \"SuperSergiy123!\"",
+            "line": 9,
+            "name": "The sign in button displays",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Sergiy\"",
-                  "offset": 17
-                },
-                {
-                  "val": "\"SuperSergiy123!\"",
-                  "offset": 35
-                }
-              ],
-              "location": "step_definitions.TradeAppTrades.i_enter_username_password(java.lang.String,java.lang.String)"
+              "location": "step_definitions.AmazonLoginSteps.the_sign_in_button_displays()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1620125200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the sign in button",
+            "match": {
+              "location": "step_definitions.AmazonLoginSteps.i_click_on_the_sign_in_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 848905300,
+              "duration": 63223900,
               "status": "passed"
             },
-            "line": 55,
-            "name": "I click on Trade login button",
+            "line": 11,
+            "name": "I should be directed to log in page",
             "match": {
-              "location": "step_definitions.TradeAppTrades.i_click_on_trade_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 107902900,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I should be on Trade homepage",
-            "match": {
-              "location": "step_definitions.TradeAppTrades.i_should_be_on_trade_homepage()"
+              "location": "step_definitions.AmazonLoginSteps.i_should_be_directed_to_log_in_page()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 108272000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I search the \"ONE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONE\"",
-                  "offset": 13
-                }
-              ],
-              "location": "step_definitions.TradeAppTrades.i_search_the(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 263236600,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "I click the Search button",
-            "match": {
-              "location": "step_definitions.TradeAppTrades.i_click_the_search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 176813100,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "The trade input displayed on the trade table",
-            "match": {
-              "location": "step_definitions.TradeAppTrades.the_trade_input_displayed_on_the_trade_table()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 441453000,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "The data is deleted on the Database",
-            "match": {
-              "location": "step_definitions.TradeAppTrades.the_data_is_deleted_on_the_database()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
@@ -178,16 +87,19 @@
             "name": "@Regression"
           },
           {
-            "name": "@InsertDB"
+            "name": "@amazonLogin"
+          },
+          {
+            "name": "@SmokeTest"
           }
         ]
       }
     ],
-    "name": "As a user, I am able to perform Trade app functions",
-    "description": "  I want to add, delete and update trades",
-    "id": "as-a-user--i-am-able-to-perform-trade-app-functions",
+    "name": "Amazon Login",
+    "description": "  I want to be able to login with valid credentials.\n  I should not be logged in with invalid credentials.",
+    "id": "amazon-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TradeAppTrades.feature",
+    "uri": "file:src/test/resources/features/AmazonLogin.feature",
     "tags": [
       {
         "name": "@Regression",
