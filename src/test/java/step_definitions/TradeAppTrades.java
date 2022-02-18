@@ -183,7 +183,15 @@ public class TradeAppTrades {
 	@Then("The trade input displayed on the trade table")
 	public void the_trade_input_displayed_on_the_trade_table() {
 		Assert.assertTrue(tradePage.addTradeBtn.isDisplayed());
-		Assert.assertEquals(stockSymbol, tradePage.stockSymbols.get(0).getText());
+		for (WebElement singleSymbol : tradePage.stockSymbols) {
+			if (singleSymbol.getText().equals(stockSymbol)) {
+				Assert.assertEquals(singleSymbol.getText(), stockSymbol);
+				System.out.println(singleSymbol.getText() +" "+ stockSymbol);
+			}
+		}
+		
+		
+		//Assert.assertEquals(stockSymbol, tradePage.stockSymbols.get(0).getText());
 	}
 
 }
