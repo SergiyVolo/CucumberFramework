@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-18T16:33:45.800Z",
+        "start_timestamp": "2022-02-19T23:45:46.649Z",
         "before": [
           {
             "result": {
-              "duration": 2631550500,
+              "duration": 2253372700,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "User should be directed to log in page",
+        "line": 6,
+        "name": "I am able to create a Pet using Post request",
         "description": "",
-        "id": "amazon-login;user-should-be-directed-to-log-in-page",
+        "id": "as-a-user-i-am-able-to-perform-http-request;i-am-able-to-create-a-pet-using-post-request",
         "after": [
           {
             "result": {
-              "duration": 304480900,
+              "duration": 91053400,
               "status": "passed"
             },
             "match": {
@@ -35,80 +35,29 @@
         "steps": [
           {
             "result": {
-              "duration": 5134079700,
+              "duration": 4522036700,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I am on amazon home page",
+            "line": 7,
+            "name": "I am able to perform Post request to create a pet with valid request body",
             "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_am_on_amazon_home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1342984500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "The sign in button displays",
-            "match": {
-              "location": "step_definitions.AmazonLoginSteps.the_sign_in_button_displays()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1620125200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I click on the sign in button",
-            "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_click_on_the_sign_in_button()"
+              "location": "step_definitions.PetStoreSteps.i_am_able_to_perform_post_request_to_create_a_pet_with_valid_request_body()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 63223900,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I should be directed to log in page",
-            "match": {
-              "location": "step_definitions.AmazonLoginSteps.i_should_be_directed_to_log_in_page()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Regression"
-          },
-          {
-            "name": "@amazonLogin"
-          },
-          {
-            "name": "@SmokeTest"
+            "name": "@CreateAPet"
           }
         ]
       }
     ],
-    "name": "Amazon Login",
-    "description": "  I want to be able to login with valid credentials.\n  I should not be logged in with invalid credentials.",
-    "id": "amazon-login",
+    "name": "As a user I am able to perform HTTP request",
+    "description": "         I want to perform GET, POST, PUT and DELETE \n         requests on Pet Store API.",
+    "id": "as-a-user-i-am-able-to-perform-http-request",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AmazonLogin.feature",
-    "tags": [
-      {
-        "name": "@Regression",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/PetStore.feature",
+    "tags": []
   }
 ]
