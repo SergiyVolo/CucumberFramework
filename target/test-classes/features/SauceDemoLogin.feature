@@ -1,6 +1,6 @@
-@Regression
+@Regression @sauceDemoTests
 Feature: Sauce Demo Login
-         This feature focuces on positive and nagative 
+         This feature focues on positive and nagetive 
          log in tests
 
   Background: 
@@ -20,7 +20,16 @@ Feature: Sauce Demo Login
     Then I should not be logged in
     And Error message should display "Epic sadface: Username and password do not match any user in this service"
 
-    
-    Scenario Outline: user is able to search 
-    Given 
-    
+  @SauceInvalidTests
+  Scenario Outline: User is not able to log in with invalid credentials
+    When I enter invalid username "<username>" password "<password>"
+    And I click on the login button
+    Then I should not be logged in
+    And Error message should display "Epic sadface: Username and password do not match any user in this service"
+
+    Examples: Credentials
+      | username      | password       |
+      | standard_user | secret_invalid |
+      | standard      | standard===    |
+      | standard123   | standard652    |
+
