@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1384157900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the SauceDemo login page",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-21T00:11:10.178Z",
+        "start_timestamp": "2022-02-21T17:02:17.718Z",
         "before": [
           {
             "result": {
-              "duration": 9624612800,
+              "duration": 2883325300,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Valid login test",
+        "line": 35,
+        "name": "As a user, I want to add a trade",
         "description": "",
-        "id": "sauce-demo-login;valid-login-test",
+        "id": "as-a-user--i-am-able-to-perform-trade-app-functions;as-a-user--i-want-to-add-a-trade",
         "after": [
           {
             "result": {
-              "duration": 442067400,
+              "duration": 280292700,
               "status": "passed"
             },
             "match": {
@@ -56,65 +35,155 @@
         "steps": [
           {
             "result": {
-              "duration": 2266814600,
+              "duration": 611892300,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I enter valid username \"standard_user\" password \"secret_sauce\"",
+            "line": 36,
+            "name": "I am on the Trade App log in page",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.i_am_on_the_trade_app_log_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 215551700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I enter username \"Sergiy\" password \"SuperSergiy123!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"standard_user\"",
-                  "offset": 23
+                  "val": "\"Sergiy\"",
+                  "offset": 17
                 },
                 {
-                  "val": "\"secret_sauce\"",
-                  "offset": 48
+                  "val": "\"SuperSergiy123!\"",
+                  "offset": 35
                 }
               ],
-              "location": "step_definitions.SauceDemoLoginSteps.i_enter_valid_username_password(java.lang.String,java.lang.String)"
+              "location": "step_definitions.TradeAppTrades.i_enter_username_password(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 693577200,
+              "duration": 923665800,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I click on the login button",
+            "line": 38,
+            "name": "I click on Trade login button",
             "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
+              "location": "step_definitions.TradeAppTrades.i_click_on_trade_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 719059100,
+              "duration": 107610000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I should be directed to inventory page",
+            "line": 39,
+            "name": "I should be on Trade homepage",
             "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_should_be_directed_to_inventory_page()"
+              "location": "step_definitions.TradeAppTrades.i_should_be_on_trade_homepage()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 371001500,
+              "duration": 217508800,
               "status": "passed"
             },
-            "line": 14,
-            "name": "There should be 6 items in the page",
+            "line": 40,
+            "name": "I click on Add Trade button",
             "match": {
-              "arguments": [
-                {
-                  "val": "6",
-                  "offset": 16
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.there_should_be_items_in_the_page(java.lang.Integer)"
+              "location": "step_definitions.TradeAppTrades.i_click_on_add_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68539200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should be on Save Trade page",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.i_should_be_on_save_trade_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 768677500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I enter the following data",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.i_enter_the_following_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Buy to Open",
+                  "JJJ",
+                  "12/01/2021",
+                  "10.0",
+                  "12/01/2022",
+                  "18.0"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 513917000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click Save button",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.i_click_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5191070900,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "The trade is displayed on the trade table",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.the_trade_is_displayed_on_the_trade_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1212791700,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "The trade data resides in data base correctly",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.the_trade_data_resides_in_data_base_correctly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 492509900,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "The data is deleted on the Database",
+            "match": {
+              "location": "step_definitions.TradeAppTrades.the_data_is_deleted_on_the_database()"
             },
             "keyword": "And "
           }
@@ -124,538 +193,19 @@
             "name": "@Regression"
           },
           {
-            "name": "@sauceDemoTests"
-          },
-          {
-            "name": "@SauceValidLogin"
+            "name": "@AddTradeAndValidate"
           },
           {
             "name": "@SmokeTests"
           }
         ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1207023000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the SauceDemo login page",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-21T00:11:25.890Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8627910400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.setup()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Invalid login test",
-        "description": "",
-        "id": "sauce-demo-login;invalid-login-test",
-        "after": [
-          {
-            "result": {
-              "duration": 376910000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2459036400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I enter invalid username \"standard_user\" password \"secret_invalid\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"secret_invalid\"",
-                  "offset": 50
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.i_enter_invalid_username_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 610607600,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I click on the login button",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 536768100,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I should not be logged in",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_should_not_be_logged_in()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 318916500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Error message should display \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.error_message_should_display(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@sauceDemoTests"
-          },
-          {
-            "name": "@SauceInvalidLogin"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1195534700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the SauceDemo login page",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-21T00:11:40.079Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8591683400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.setup()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "User is not able to log in with invalid credentials",
-        "description": "",
-        "id": "sauce-demo-login;user-is-not-able-to-log-in-with-invalid-credentials;credentials;2",
-        "after": [
-          {
-            "result": {
-              "duration": 368714900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2460698500,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I enter invalid username \"standard_user\" password \"secret_invalid\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"secret_invalid\"",
-                  "offset": 50
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.i_enter_invalid_username_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 609997500,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I click on the login button",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 714686700,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I should not be logged in",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_should_not_be_logged_in()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 344536900,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Error message should display \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.error_message_should_display(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@sauceDemoTests"
-          },
-          {
-            "name": "@SauceInvalidTests"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1104003700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the SauceDemo login page",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-21T00:11:54.435Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8868755300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.setup()"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "User is not able to log in with invalid credentials",
-        "description": "",
-        "id": "sauce-demo-login;user-is-not-able-to-log-in-with-invalid-credentials;credentials;3",
-        "after": [
-          {
-            "result": {
-              "duration": 366215400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2234128500,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I enter invalid username \"standard\" password \"standard\u003d\u003d\u003d\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"standard\u003d\u003d\u003d\"",
-                  "offset": 45
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.i_enter_invalid_username_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 532330400,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I click on the login button",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 606515000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I should not be logged in",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_should_not_be_logged_in()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 348497600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Error message should display \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.error_message_should_display(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@sauceDemoTests"
-          },
-          {
-            "name": "@SauceInvalidTests"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1184730800,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the SauceDemo login page",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_am_on_the_sauce_demo_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-21T00:12:08.542Z",
-        "before": [
-          {
-            "result": {
-              "duration": 9018019100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.setup()"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "User is not able to log in with invalid credentials",
-        "description": "",
-        "id": "sauce-demo-login;user-is-not-able-to-log-in-with-invalid-credentials;credentials;4",
-        "after": [
-          {
-            "result": {
-              "duration": 396030700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4607714600,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I enter invalid username \"standard123\" password \"standard652\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard123\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"standard652\"",
-                  "offset": 48
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.i_enter_invalid_username_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 612442900,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I click on the login button",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 613666400,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I should not be logged in",
-            "match": {
-              "location": "step_definitions.SauceDemoLoginSteps.i_should_not_be_logged_in()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 420486100,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Error message should display \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 29
-                }
-              ],
-              "location": "step_definitions.SauceDemoLoginSteps.error_message_should_display(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@sauceDemoTests"
-          },
-          {
-            "name": "@SauceInvalidTests"
-          }
-        ]
       }
     ],
-    "name": "Sauce Demo Login",
-    "description": "         This feature focues on positive and nagetive \n         log in tests",
-    "id": "sauce-demo-login",
+    "name": "As a user, I am able to perform Trade app functions",
+    "description": "  I want to add, delete and update trades",
+    "id": "as-a-user--i-am-able-to-perform-trade-app-functions",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/SauceDemoLogin.feature",
+    "uri": "file:src/test/resources/features/TradeAppTrades.feature",
     "tags": [
       {
         "name": "@Regression",
@@ -663,14 +213,6 @@
         "location": {
           "line": 1,
           "column": 1
-        }
-      },
-      {
-        "name": "@sauceDemoTests",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 13
         }
       }
     ]
